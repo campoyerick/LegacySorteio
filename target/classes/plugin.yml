@@ -1,0 +1,6 @@
+name: LegacySorteio
+version: 1.4
+website: legacystore.store
+main: legacystore.store.legacysorteio.LegacySorteio
+commands:
+  sorteio:

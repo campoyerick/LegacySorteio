@@ -1,0 +1,54 @@
+database:
+  host: localhost
+  port: 3306
+  database: test
+  username: root
+  password: ""
+
+Configuracoes:
+  jogadoresminimos: 2
+  quantidadeultimosganhadores: 5
+
+Premios:
+  '1':
+    Tipo: Item
+    Porcentagem: 10
+    Item:
+      Material: FURNACE
+      Data: 0
+      Quantidade: 64
+      Nome: "&6teste" # aceita & ou §
+      Lore:
+        - "§6Lore legal"  # aceita & ou §
+        - "§dLore linda"  # aceita & ou §
+  '2':
+    Tipo: Comando
+    Porcentagem: 50
+    Comando:
+      Nome: "&bNome que vai aparecer"
+      Comando: "money give 1500"
+  '3':
+    Tipo: Item
+    Porcentagem: 90
+    Item:
+      Material: WOOD
+      Data: 0
+      Quantidade: 64
+      Nome: "&6teste"
+
+Mensagens:
+  Faltadejogador:
+    Titulo: "&cSorteio Cancelado"
+    Subtitulo: "Não há jogadores online para sortear."
+  SorteioCancelado:
+    Titulo: "&cSorteio Cancelado"
+    Subtitulo: "Foi forçado a ser cancelado."
+  JogadoresInsuficientes:
+    Titulo: "&cSorteio Cancelado"
+    Subtitulo: "Jogadores insuficientes para iniciar."
+  IniciandoSorteio:
+    Titulo: "&b&kSorteando"
+    Subtitulo: "Sorteando um jogador para ganhar o prêmio."
+  SortearJogador:
+    Titulo: "&b{ganhador}"
+    Subtitulo: "O jogador ganhou {premio}"
